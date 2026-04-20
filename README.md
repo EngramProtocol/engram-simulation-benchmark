@@ -411,9 +411,8 @@ A: Only for Irys benchmarking (requires funded Ethereum account).
 
 ## Support
 
-- 📧 Email: support@example.com
-- 🐛 Issues: https://github.com/yourusername/engram-simulation-benchmark/issues
-- 💬 Discussions: https://github.com/yourusername/engram-simulation-benchmark/discussions
+- 🐛 Issues: https://github.com/EngramProtocol/engram-simulation-benchmark/issues
+- 💬 Discussions: https://github.com/EngramProtocol/engram-simulation-benchmark/discussions
 
 ---
 
