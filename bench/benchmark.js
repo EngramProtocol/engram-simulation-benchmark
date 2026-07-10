@@ -9,7 +9,7 @@ const { SigningStargateClient, assertIsDeliverTxSuccess } = require("@cosmjs/sta
 const winston = require('winston');
 const path = require('path');
 
-const ENGRAM_RPC = process.env.ENGRAM_RPC || "http://131.153.224.169:26757";
+const ENGRAM_RPC = process.env.ENGRAM_RPC || "http://<your-node>:26757";    
 const BABYLON_RPC = "https://babylon-testnet-rpc.nodes.guru"; 
 const BABYLON_DENOM = "ubbn";
 const BATCH_SIZE = 10; 

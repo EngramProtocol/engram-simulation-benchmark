@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 // --- CONFIGURATION ---
-const DAL_RPC = process.env.DAL_RPC || "http://131.153.224.169:26757";
+const DAL_RPC = process.env.DAL_RPC || "http://<your-node>:26757";
 const IRYS_NODE = "https://devnet.irys.xyz"; 
 const TOKEN_CURRENCY = "ethereum";           
 const PROVIDER_URL = "https://1rpc.io/sepolia"; 

@@ -47,9 +47,9 @@ Create a `.env` file in the root directory (optional):
 
 ```env
 # RPC Endpoints
-ENGRAM_RPC=http://131.153.224.169:26757
+ENGRAM_RPC=http://<your-node>:26757
 BABYLON_RPC=https://babylon-testnet-rpc.nodes.guru
-DAL_RPC=http://131.153.224.169:26757
+DAL_RPC=http://<your-node>:26757
 
 # Network Configuration
 BATCH_SIZE=10
@@ -276,9 +276,9 @@ engram-simulation-benchmark/
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `ENGRAM_RPC` | `http://131.153.224.169:26757` | ENGRAM node RPC endpoint |
+| `ENGRAM_RPC` | `http://<your-node>:26757` | ENGRAM node RPC endpoint |
 | `BABYLON_RPC` | `https://babylon-testnet-rpc.nodes.guru` | Babylon testnet RPC |
-| `DAL_RPC` | `http://131.153.224.169:26757` | DAL/STRATA RPC endpoint |
+| `DAL_RPC` | `http://<your-node>:26757` | DAL/STRATA RPC endpoint |
 | `BATCH_SIZE` | `10` | Block batch size for anchoring |
 | `BABYLON_DENOM` | `ubbn` | Babylon denomination (micro-BBN) |
 | `PRIVATE_KEY` | (required for Irys) | Ethereum private key (hex format) |
@@ -322,10 +322,10 @@ cp .env.example .env
 
 ```bash
 # Test RPC connectivity
-curl http://131.153.224.169:26757/status
+curl <your-node>:26757/status
 
 # Or use axios-based checker
-node -e "const axios = require('axios'); axios.get('http://131.153.224.169:26757/status').then(r => console.log('✅ Connected')).catch(e => console.log('❌', e.message))"
+node -e "const axios = require('axios'); axios.get('http://<your-node>:26757/status').then(r => console.log('✅ Connected')).catch(e => console.log('❌', e.message))"
 ```
 
 ### Missing Dependencies

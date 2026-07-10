@@ -2,7 +2,7 @@ require('dotenv').config();
 const axios = require('axios');
 
 // --- CONFIGURATION ---
-const DAL_RPC = process.env.DAL_RPC || "http://131.153.224.169:26757";
+const DAL_RPC = process.env.DAL_RPC || "http://<your-node>:26757" ;
 const BABYLON_RPC = "https://babylon-testnet-rpc.nodes.guru"; 
 const EXPERIMENT_BATCH_SIZES = [1, 10, 50, 100, 360];
 
@@ -22,7 +22,7 @@ const BBN_TO_USD = 0.5; // Assume 1 BBN = $0.5
 const UBBBN_TO_BBN = 1_000_000;
 
 async function main() {
-    console.log("🚀 COLLECTING REAL DATA FROM NETWORK (STRATA DAL & BABYLON)...");
+    console.log("🚀 COLLECTING REAL DATA FROM NETWORK (Engram DAL & BABYLON)...");
     
     // 1. Get latest block to determine peak
     const latestBlock = await fetchBlock();
